@@ -1,0 +1,11 @@
+<form #SignInForm="ngForm" (ngSubmit)="save()">
+    <input type="text"
+    name="Namecostumer" id="Namecostumer" [(ngModel)]="u.UserName" 
+   required placeholder="UserName">            
+    <input type="text" name="password" id="password"
+    [(ngModel)]="u.Password" required placeholder="Password">
+    <input type="submit" value="היכנס" [disabled]="!SignInForm.form.valid">
+
+</form>
+
+{{result}}
