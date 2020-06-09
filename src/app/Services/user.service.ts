@@ -13,7 +13,7 @@ export class UserService {
   FindeUser(u:User):Observable<string>
   {
 
-   //nm,hbjnkml
+   
     return this.http.post<string>(this.url + "FindeUser/",u);
   }
   
