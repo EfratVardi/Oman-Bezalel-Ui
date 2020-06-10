@@ -12,9 +12,6 @@ export class UserService {
 
   FindeUser(u:User):Observable<string>
   {
-
-   
-    //fghjkl;'
     return this.http.post<string>(this.url + "FindeUser/",u);
   }
   
